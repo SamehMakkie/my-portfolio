@@ -32,14 +32,14 @@ const ProjectDetailsCard: React.FC<IProjectDetailsCardProps> = ({
         opacity: isDivInView ? 1 : 0,
         transition: "all 1s",
       }}
-      className="max-w-[594px] flex flex-col gap-5 lg:gap-10">
-      <h2 className="text-white text-[32px] sm:text-[4.5vw] md:text-5xl font-bold">
+      className="max-w-[594px] flex flex-col gap-5 lg:gap-10 white-color-toggle">
+      <h2 className="text-white text-[32px] sm:text-[4.5vw] md:text-5xl font-bold white-color-toggle">
         {title}{" "}
-        <span className="font-light text-[20px] sm:text-[2.8vw] md:text-3xl">
+        <span className="font-light text-[20px] sm:text-[2.8vw] md:text-3xl white-color-toggle">
           {titleSpan}
         </span>
       </h2>
-      <p className="text-white text-[18px] sm:text-[2.1vw] md:text-xl leading-[35px] sm:leading-[30px] md:leading-[40px] font-light">
+      <p className="text-white text-[18px] sm:text-[2.1vw] md:text-xl leading-[35px] sm:leading-[30px] md:leading-[40px] font-light white-color-toggle">
         {description}
       </p>
       <div className="w-full flex gap-5">

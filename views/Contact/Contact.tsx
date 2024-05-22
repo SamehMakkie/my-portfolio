@@ -29,13 +29,13 @@ const Contact = () => {
           opacity: isHeadingView ? 1 : 0,
           transition: "all 1s",
         }}
-        className="w-full max-w-2xl flex flex-col p-12 sm:p-32 gap-20 rounded-[75px] sm:rounded-[150px] bg-black">
-        <div className="flex flex-col gap-5 items-center">
+        className="w-full max-w-2xl flex flex-col p-12 sm:p-32 gap-20 rounded-[75px] sm:rounded-[150px] bg-black white-color-toggle">
+        <div className="flex flex-col gap-5 items-center white-color-toggle">
           <div className="w-full flex p-3 gap-2 border rounded-xl items-center text-white border-white transition-colors duration-500 focus-within:border-blue-500 focus-within:text-blue-500 focus-within:border-2">
             <MdOutlineEmail size={24} className="" />
             <input
               type="text"
-              className="grow bg-transparent text-white placeholder:text-gray-400 focus:outline-none"
+              className="grow bg-transparent text-white placeholder:text-gray-400 focus:outline-none white-color-toggle"
               placeholder="Email"
             />
           </div>
@@ -43,7 +43,7 @@ const Contact = () => {
           <textarea
             placeholder="Message"
             rows={5}
-            className="w-full flex p-3 gap-2 border rounded-xl items-center bg-transparent text-white border-white focus:outline-none transition-colors duration-500 focus-within:border-blue-500  focus-within:border-2"
+            className="w-full flex p-3 gap-2 border rounded-xl items-center bg-transparent text-white border-white focus:outline-none transition-colors duration-500 focus-within:border-blue-500  focus-within:border-2 white-color-toggle"
           />
           <button className="w-full p-3 bg-white text-black rounded-xl focus:outline-none transition-colors duration-500 focus:border-blue-500 focus:border-2">
             Send

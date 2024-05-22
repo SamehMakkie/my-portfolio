@@ -34,7 +34,7 @@ const PortfolioProjectImage: React.FC<IProjectImageProps> = ({
       }}
       src={imgSrc}
       alt={altText}
-      className={"w-full object-cover " + roundedStyles + maximumWidth}
+      className={"w-full object-cover white-color-toggle " + roundedStyles + maximumWidth}
     />
   );
 };

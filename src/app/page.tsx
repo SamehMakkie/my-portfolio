@@ -1,3 +1,4 @@
+import MouseFollower from "../../components/MouseFollower/MouseFollower";
 import Contact from "../../views/Contact/Contact";
 import Footer from "../../views/Footer/Footer";
 import Hero from "../../views/Hero/Hero";
@@ -14,6 +15,7 @@ export default function Home() {
       <PortfolioProjects />
       <Contact />
       <Footer />
+      <MouseFollower />
     </div>    
   );
 }

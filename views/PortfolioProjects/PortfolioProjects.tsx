@@ -44,7 +44,7 @@ const PortfolioProjects = () => {
   const isHeadingView = useInView(headingRef, { once: true });
 
   return (
-    <div className="w-full flex flex-col p-20 sm:p-24 md:p-44 gap-[200px] md:gap-[384px] rounded-[150px] sm:rounded-[200px] md:rounded-[300px] bg-black">
+    <div className="w-full flex flex-col p-20 sm:p-24 md:p-44 gap-[200px] md:gap-[384px] rounded-[150px] sm:rounded-[200px] md:rounded-[300px] bg-black white-color-toggle">
       <motion.h2
         ref={headingRef}
         style={{
@@ -52,11 +52,11 @@ const PortfolioProjects = () => {
           opacity: isHeadingView ? 1 : 0,
           transition: "all 1s",
         }}
-        className="text-[6vw] sm:text-[5vw] md:text-[6vw] lg:text-[75px] font-bold text-white">
+        className="text-[6vw] sm:text-[5vw] md:text-[6vw] lg:text-[75px] font-bold text-white white-color-toggle">
         Highlighted <br />
         <span className="font-light">Projects</span>
       </motion.h2>
-      <div className="flex flex-col gap-96 items-center">
+      <div className="flex flex-col gap-96 items-center white-color-toggle">
         {projects.map((project, index) => (
           <ProjectSection key={index} {...project} />
         ))}

@@ -26,8 +26,8 @@ const ProjectSection: React.FC<IProjectProps> = ({
   liveLink,
 }) => {
   return (
-    <div className="w-full flex flex-col gap-14 lg:gap-44">
-      <div className="w-full flex">
+    <div className="w-full flex flex-col gap-14 lg:gap-44 white-color-toggle">
+      <div className="w-full flex white-color-toggle white-color-toggle">
         <PortfolioProjectImage
           imgSrc={imgSrc}
           altText={altImgText}
@@ -35,7 +35,7 @@ const ProjectSection: React.FC<IProjectProps> = ({
           isRounded={isImgRounded}
         />
       </div>
-      <div className="w-full flex lg:justify-end">
+      <div className="w-full flex lg:justify-end white-color-toggle">
         <ProjectDetailsCard
           title={title}
           titleSpan={titleSpan}
