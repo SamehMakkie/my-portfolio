@@ -44,7 +44,7 @@ const PortfolioProjects = () => {
   const isHeadingView = useInView(headingRef, { once: true });
 
   return (
-    <div className="w-full flex flex-col p-20 sm:p-24 md:p-44 gap-[200px] md:gap-[384px] rounded-[150px] sm:rounded-[200px] md:rounded-[300px] bg-black white-color-toggle">
+    <div className="w-full flex flex-col p-20 pb-48 sm:p-24 sm:pb-56 md:p-44 md:pb-72 gap-[200px] md:gap-[384px] rounded-[150px] sm:rounded-[200px] md:rounded-[300px] bg-black white-color-toggle">
       <motion.h2
         ref={headingRef}
         style={{
